@@ -1,4 +1,4 @@
-{if $role=="user" }
+    {if $role=="user" }
   {$name = 'main_user_login.tpl'}
 {else if $role=="root"}
   {$name = 'main_admin_login.tpl'}
