@@ -19,14 +19,14 @@
 
          
 
-            <h3>Moje wizyty</h3>
+            <h3>Koszyk</h3>
 
             <section>
                     <div class="table-wrapper">
                             <table>
                                     <thead>
                                             <tr>
-                                                    <th>Usługa</th>
+                                                    <th>Przedmiot</th>
                                                     <th>Cena</th>
                                                     <th>Usuń z koszyka</th>
                                             </tr>
@@ -42,6 +42,7 @@
                                                         </tr>
                                                 {/strip}
                                                 {/foreach} 
+                                                
                                                 <tr>
                                                             <td>SUMA:</td>
                                                             <td>{$suma}</td>

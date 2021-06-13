@@ -7,14 +7,14 @@ use core\Message;
 use core\Utils;
 
 
-class RegisterCtrl {
+class RegisterEmployeeCtrl {
     private $name;
     private $email;
     private $tel;
     private $password;
     
     //ZAREJESTROWANIE UŻYTKOWNIKA, KLIENTA
-    public function action_register() {   
+    public function action_registerEmployee() {   
         $this->getParams();
         if ($this->validate()) {
             try {
@@ -25,7 +25,7 @@ class RegisterCtrl {
                             "e_mail" => $this->email,
                             "login" => $this->email,
                             "password" => $this->password,
-                            "role" => "user"
+                            "role" => "root"
                 ]);
                 
             } catch (\PDOException $e) {
@@ -56,7 +56,7 @@ class RegisterCtrl {
         
         App::getSmarty()->assign("action_url",App::getConf()->action_url);      
         App::getSmarty()->assign("app_url",App::getConf()->app_root);        
-        App::getSmarty()->display("register.tpl");    
+        App::getSmarty()->display("register_employee.tpl");    
     }
 
     public function validate(){    

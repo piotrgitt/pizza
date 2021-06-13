@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-06-06 18:41:37
+/* Smarty version 3.1.34-dev-7, created on 2021-06-13 16:08:16
   from 'C:\xampp\htdocs\pizza\app\views\my_reservations.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_60bcfac1d6a851_60253369',
+  'unifunc' => 'content_60c61150f22741_46728435',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5026a5a22638a011f0b3d9312ae00500b68eecc4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pizza\\app\\views\\my_reservations.tpl',
-      1 => 1622997696,
+      1 => 1623593293,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60bcfac1d6a851_60253369 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60c61150f22741_46728435 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ($_smarty_tpl->tpl_vars['role']->value == "user") {?>
@@ -35,16 +35,16 @@ if ($_smarty_tpl->tpl_vars['role']->value == "user") {?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_40760239760bcfac1d602a9_73588436', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_184585770060c61150f161a2_84758575', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, $_smarty_tpl->tpl_vars['name']->value);
 }
 /* {block 'content'} */
-class Block_40760239760bcfac1d602a9_73588436 extends Smarty_Internal_Block
+class Block_184585770060c61150f161a2_84758575 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_40760239760bcfac1d602a9_73588436',
+    0 => 'Block_184585770060c61150f161a2_84758575',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -59,14 +59,14 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
          
 
-            <h3>Moje wizyty</h3>
+            <h3>Koszyk</h3>
 
             <section>
                     <div class="table-wrapper">
                             <table>
                                     <thead>
                                             <tr>
-                                                    <th>Usługa</th>
+                                                    <th>Przedmiot</th>
                                                     <th>Cena</th>
                                                     <th>Usuń z koszyka</th>
                                             </tr>
@@ -87,6 +87,7 @@ delete_reservation/<?php echo $_smarty_tpl->tpl_vars['reservation']->value["id_r
                                                 <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?> 
+                                                
                                                 <tr>
                                                             <td>SUMA:</td>
                                                             <td><?php echo $_smarty_tpl->tpl_vars['suma']->value;?>

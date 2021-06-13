@@ -19,6 +19,7 @@
 						<ul>
 							<li><a href="{$conf->action_root}show_front_page">Strona główna</a></li>
                                                         <li><a href="{$conf->action_root}pricing">Menu</a></li>
+                                                        <li><a href="{$conf->action_root}registerEmployee">RE</a></li>
                                                         <li><a href="{$conf->action_root}do_przygotowania">DO PRZYGOTOWANIA</a></li>
                                                         <li><a href="{$conf->action_root}przygotowano">PRZYGOTOWANE</a></li>
                                                         <li><a href="{$conf->action_root}all_reservations">Wszystkie zamówienia</a></li>

@@ -55,10 +55,10 @@ class MyReservationsCtrl {
             foreach($this->reservations as $reservation) {
             $this->nazwa_zamowienia =  $this->nazwa_zamowienia . $reservation["service_name"]." + ";
             $this->cena_zamowienia = $this->cena_zamowienia + $reservation["service_price"];
-        }
-            
+            }
         }
         
+        //DODAJ ZAMÓWIENIE
         if ($this->validate()) {
             try {
                 

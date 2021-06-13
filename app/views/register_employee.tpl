@@ -1,55 +1,15 @@
-<?php
-/* Smarty version 3.1.34-dev-7, created on 2021-06-13 14:48:48
-  from 'C:\xampp\htdocs\pizza\app\views\register.tpl' */
-
-/* @var Smarty_Internal_Template $_smarty_tpl */
-if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_60c5feb0717713_72341448',
-  'has_nocache_code' => false,
-  'file_dependency' => 
-  array (
-    '31ffbb6127bf2fa3b690376d3aeb55344a5bab39' => 
-    array (
-      0 => 'C:\\xampp\\htdocs\\pizza\\app\\views\\register.tpl',
-      1 => 1623588086,
-      2 => 'file',
-    ),
-  ),
-  'includes' => 
-  array (
-  ),
-),false)) {
-function content_60c5feb0717713_72341448 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_loadInheritance();
-$_smarty_tpl->inheritance->init($_smarty_tpl, true);
-if ($_smarty_tpl->tpl_vars['role']->value == "user") {?>
-  <?php $_smarty_tpl->_assignInScope('name', 'main_user_login.tpl');
-} elseif ($_smarty_tpl->tpl_vars['role']->value == "root") {?>
-  <?php $_smarty_tpl->_assignInScope('name', 'main_admin_login.tpl');
-} else { ?>
-   <?php $_smarty_tpl->_assignInScope('name', 'main.tpl');?> 
-<?php }?>
- 
+{if $role=="user" }
+  {$name = 'main_user_login.tpl'}
+{else if $role=="root"}
+  {$name = 'main_admin_login.tpl'}
+{else}
+   {$name = 'main.tpl'} 
+{/if}
+ {extends $name}
 
 
 
-<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_152065979760c5feb07145f0_30263827', 'content');
-$_smarty_tpl->inheritance->endChild($_smarty_tpl, $_smarty_tpl->tpl_vars['name']->value);
-}
-/* {block 'content'} */
-class Block_152065979760c5feb07145f0_30263827 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'content' => 
-  array (
-    0 => 'Block_152065979760c5feb07145f0_30263827',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
-
+{block name=content}
 
 
 
@@ -60,7 +20,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                         <h2>Rejestracja</h2>
                 </header>  
         <header class="minor">
-                        <h3>Zarejestruj się aby zarezerwować wizytę on-line!</h3>
+                        <h3>Rejestracja nowego PRACOWNIKA</h3>
                 </header>  
             
 
@@ -68,8 +28,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         
         
         <section>
-                <form method="post" action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-register">
+                <form method="post" action="{$conf->action_root}registerEmployee">
                         <div class="row gtr-uniform gtr-50">
 
                                 
@@ -95,8 +54,6 @@ register">
                                         <header>
                                             <ul class="actions stacked" >
                                                     <li><input  type="submit" value="Zarejestruj" class="primary" /></li>
-                                                    <li><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-zaloguj">Masz już konto? Zaloguj się.</a></li>
                                             </ul>
                                         </header>
 
@@ -119,8 +76,4 @@ zaloguj">Masz już konto? Zaloguj się.</a></li>
                         
         </div>
 </div>
-<?php
-}
-}
-/* {/block 'content'} */
-}
+{/block}

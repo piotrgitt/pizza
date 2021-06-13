@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-06-06 13:12:09
+/* Smarty version 3.1.34-dev-7, created on 2021-06-13 16:05:13
   from 'C:\xampp\htdocs\pizza\app\views\pricing.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_60bcad8942b7f7_82255442',
+  'unifunc' => 'content_60c610992ef252_66233071',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '36705784d887cc8851906bf3823633b7c8e00f8e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pizza\\app\\views\\pricing.tpl',
-      1 => 1622977893,
+      1 => 1623592720,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60bcad8942b7f7_82255442 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60c610992ef252_66233071 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ($_smarty_tpl->tpl_vars['role']->value == "user") {?>
@@ -34,16 +34,16 @@ if ($_smarty_tpl->tpl_vars['role']->value == "user") {?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_69467033960bcad8942ab57_18860165', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_127319642660c610992e7d32_23849299', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, $_smarty_tpl->tpl_vars['name']->value);
 }
 /* {block 'content'} */
-class Block_69467033960bcad8942ab57_18860165 extends Smarty_Internal_Block
+class Block_127319642660c610992e7d32_23849299 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_69467033960bcad8942ab57_18860165',
+    0 => 'Block_127319642660c610992e7d32_23849299',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -76,37 +76,18 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                                                 </tr>
                                         </thead>
                                         <tbody>
-                                                <tr>
-                                                       
-                                                    <td>Margharita<i>(Sos,ser)</i></td>
-                                                        <td>28zł</td>
-
-                                                </tr>
-                                                <tr>
-           
-                                                        <td>Funghi<i>(sos,ser,pieczarki)</i></td>
-                                                        <td>30zł</td>
-
-                                                </tr>
-                                                <tr>
-
-                                                        <td>Cardinale<i>(sos,ser,szynka)</i></td>
-                                                        <td>31zł</td>
-
-                                                </tr>
-                                                <tr>
-          
-                                                        <td>Hawaii<i>(sos,ser,szynka,ananas)</i></td>
-                                                        <td>34zł</td>
-
-                                                </tr>
-                                                <tr>
-                 
-                                                        <td>Salami<i>(sos,ser,salami)</i></td>
-                                                        <td>31zł</td>
-
-                                                </tr>
-
+                                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['services']->value, 'service');
+$_smarty_tpl->tpl_vars['service']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['service']->value) {
+$_smarty_tpl->tpl_vars['service']->do_else = false;
+?>
+                                                <tr><td><?php echo $_smarty_tpl->tpl_vars['service']->value["service_name"];?>
+</td><td><?php echo $_smarty_tpl->tpl_vars['service']->value["service_price"];?>
+</td></tr>
+                                                <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>    
                                         </tbody>
 
                                 </table>
@@ -116,86 +97,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                 <hr />
                 
                 
-                <!-- Dodatki -->
-                        <header class="minor">
-                                <h2>Dodatki</h2>
-                        </header>  
-                    
-                    
-                        <div class="table-wrapper">
-                                <table>
-                                        <thead>
-                                                <tr>
-                                                      
-                                                        <th>Nazwa</th>
-                                                        <th>Cena</th>
-
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                       
-                                                        <td>Frytki(150g)</td>
-                                                        <td>8zł</td>
-
-                                                </tr>
-                                                <tr>
-           
-                                                        <td>Frytki belgijskie(150g)</td>
-                                                        <td>12zł</td>
-
-                                                </tr>
-                                                <tr>
-
-                                                        <td>Sos<i>(czosnkowy,pomidorowy,barbecue)</i></td>
-                                                        <td>3zł</td>
-
-                                                </tr>
-                                        </tbody>
-
-                                </table>
-                        </div>
                 
-                
-     <!-- napoje -->
-                        <header class="minor">
-                                <h2>Napoje</h2>
-                        </header>  
-                    
-                    
-                        <div class="table-wrapper">
-                                <table>
-                                        <thead>
-                                                <tr>
-                                                      
-                                                        <th>Nazwa</th>
-                                                        <th>Cena</th>
-
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                       
-                                                        <td>Napój gazowany 500ml<i>(pepsi, cola, mirinda, sprite)</i></td>
-                                                        <td>6zł</td>
-
-                                                </tr>
-                                                <tr>
-           
-                                                        <td>Herbata<i>(czarna, zielona, owocowa)</i></td>
-                                                        <td>7zł</td>
-                                                </tr>
-                                                <tr>
-
-                                                        <td>Kawa<i>(czarna, z mlekiem)</i></td>
-                                                        <td>7zł</td>
-                                                </tr>
-                                        </tbody>
-
-                                </table>
-                        </div>
-                </section> 
-                <hr />
                                         
                                         
                                         

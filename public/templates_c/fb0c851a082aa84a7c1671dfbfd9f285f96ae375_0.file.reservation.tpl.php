@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-06-08 17:50:28
+/* Smarty version 3.1.34-dev-7, created on 2021-06-13 15:58:58
   from 'C:\xampp\htdocs\pizza\app\views\reservation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_60bf91c4908862_12949764',
+  'unifunc' => 'content_60c60f22c4eb78_73682975',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fb0c851a082aa84a7c1671dfbfd9f285f96ae375' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pizza\\app\\views\\reservation.tpl',
-      1 => 1623166084,
+      1 => 1623592373,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60bf91c4908862_12949764 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60c60f22c4eb78_73682975 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ($_smarty_tpl->tpl_vars['role']->value == "user") {?>
@@ -36,16 +36,16 @@ if ($_smarty_tpl->tpl_vars['role']->value == "user") {?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_64873527660bf91c4810567_10196807', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_164976074960c60f22c460e3_39942147', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, $_smarty_tpl->tpl_vars['name']->value);
 }
 /* {block 'content'} */
-class Block_64873527660bf91c4810567_10196807 extends Smarty_Internal_Block
+class Block_164976074960c60f22c460e3_39942147 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_64873527660bf91c4810567_10196807',
+    0 => 'Block_164976074960c60f22c460e3_39942147',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -61,7 +61,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                     <h2>Rezerwacja</h2>
             </header>  
 
-            <h3>Wybierz usługę</h3>
+            <h3>Wybierz przedmiot</h3>
             <section>
                 <form method="post" action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
 process" >
@@ -71,7 +71,7 @@ process" >
                             <table>
                                     <thead>
                                             <tr>
-                                                    <th>Usługa</th>
+                                                    <th>Nazwa</th>
                                                     <th>Cena</th>
                                                     <th>     </th>
                                             </tr>

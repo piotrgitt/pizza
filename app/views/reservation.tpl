@@ -21,7 +21,7 @@
                     <h2>Rezerwacja</h2>
             </header>  
 
-            <h3>Wybierz usługę</h3>
+            <h3>Wybierz przedmiot</h3>
             <section>
                 <form method="post" action="{$conf->action_root}process" >
                     <!-- Table -->
@@ -30,7 +30,7 @@
                             <table>
                                     <thead>
                                             <tr>
-                                                    <th>Usługa</th>
+                                                    <th>Nazwa</th>
                                                     <th>Cena</th>
                                                     <th>     </th>
                                             </tr>

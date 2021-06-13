@@ -22,7 +22,7 @@
             <form method="post" action="{$conf->action_root}login" >
                 <div class="row gtr-uniform gtr-50">
                     <div class="col-6 col-12-xsmall">
-                            <input type="text" name="login" id="login" value="{$login}" placeholder="login"/>
+                            <input type="text" name="login" id="login" value="{$login}" placeholder="e-mail"/>
                     </div>
                     <div class="col-6 col-12-xsmall">
                             <input type="password" name="password" id="password" value="{$password}" placeholder="password" />

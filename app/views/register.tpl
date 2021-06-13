@@ -28,7 +28,7 @@
         
         
         <section>
-                <form method="post" action="{$conf->action_root}zaloguj">
+                <form method="post" action="{$conf->action_root}register">
                         <div class="row gtr-uniform gtr-50">
 
                                 

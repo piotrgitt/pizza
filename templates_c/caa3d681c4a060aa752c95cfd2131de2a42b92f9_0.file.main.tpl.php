@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-06-13 11:39:24
+/* Smarty version 3.1.34-dev-7, created on 2021-06-13 14:48:45
   from 'C:\xampp\htdocs\pizza\app\views\templates\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_60c5d24cd917a5_37159499',
+  'unifunc' => 'content_60c5feada61365_34669893',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'caa3d681c4a060aa752c95cfd2131de2a42b92f9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pizza\\app\\views\\templates\\main.tpl',
-      1 => 1623010631,
+      1 => 1623580277,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60c5d24cd917a5_37159499 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60c5feada61365_34669893 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Pizzeria Gabana</title>
+        <title>Gabana</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
@@ -44,7 +44,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 			<!-- Header -->
 				<header id="header">
 					<h1 id="logo"><a href="<?php echo $_smarty_tpl->tpl_vars['app_url']->value;?>
-/index.html">Pizza</a></h1>
+/index.html">Gabana</a></h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
@@ -70,14 +70,14 @@ login">Zaloguj się</a></li>
                         <!-- content -->    
                                 <div class="content">
                                         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_42137943560c5d24cc64273_52665948', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_111469358860c5feada543d3_66778658', 'content');
 ?>
 
                                 </div>  
                                 
                         <!-- Messages -->           
                                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_147818643260c5d24cc673c0_35382782', 'messages');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_83154681960c5feada54ee9_27608005', 'messages');
 ?>
              
 			<!-- Footer -->
@@ -132,12 +132,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_147818643260c5d24c
 	</body>
 </html><?php }
 /* {block 'content'} */
-class Block_42137943560c5d24cc64273_52665948 extends Smarty_Internal_Block
+class Block_111469358860c5feada543d3_66778658 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_42137943560c5d24cc64273_52665948',
+    0 => 'Block_111469358860c5feada543d3_66778658',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -147,12 +147,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'content'} */
 /* {block 'messages'} */
-class Block_147818643260c5d24cc673c0_35382782 extends Smarty_Internal_Block
+class Block_83154681960c5feada54ee9_27608005 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'messages' => 
   array (
-    0 => 'Block_147818643260c5d24cc673c0_35382782',
+    0 => 'Block_83154681960c5feada54ee9_27608005',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
