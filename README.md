@@ -4,6 +4,10 @@ Projekt Systemu
 #### Link do strony internetowej
 http://www.pizzeria-gabana.pl
 
+
+#### Link do pliku z bazą danych
+https://drive.google.com/file/d/1zuJawQchzOsvbQttvH3rO1zSqoqXp1I9/view?usp=sharing
+
 # Opis 
 Dane repozytorium zawiera projekt aplikacji internetowej stworzonej w frameworku Amelia. Aplikacja pozwala na tworzenie kont pracowników i klientów, którzy mają różne opcje podczas korzystania z aplikacji. Klient może składać zamówienia na stronie internetowej oraz przeglądać akutalne zamówienia. Pracownicy mogą podglądać wszystkie zamówienia złożone przez Klientów oraz zarządzać nimi. Konieczne jest zalogowanie/zarejestrowanie się, aby składać zamówienia.
 
